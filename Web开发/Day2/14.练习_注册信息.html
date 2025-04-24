@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册信息</title>
+</head>
+<body>
+    <h1>注册信息</h1>
+    <form>
+        <div>
+            <h2>个人信息</h2>
+            <label>姓名<input type="text" placeholder="请输入姓名"></label>   <br>
+            <label>密码<input type="password" placeholder="请输入密码"></label>   <br>
+            <label>确认密码<input type="password" placeholder="请输入确认密码"></label>   <br>
+            性别：<label><input type="radio" name="gender">男</label>
+                  <label><input type="radio" name="gender">女</label><br>
+            <label>剧住城市：
+                <select >
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option selected>杭州</option>
+                 </select>
+        </label>
+
+        </div>
+
+        <div>
+            <h2>教育经历</h2>
+            <label>
+            最高学历：<select>
+                        <option>小学</option>
+                        <option>中学</option>
+                        <option>高中</option>
+                        <option>大专</option>
+                        <option selected>本科</option>
+                        <option>博士</option>
+                     </select>
+            </label><br>
+            <label>学校名称<input type="text"></label><br>
+            <label>专业<input type="text"></label><br>
+            
+
+        </div>
+
+        <div>
+            <h2>工作经历</h2>
+            <label>公司名称<input type="text"></label><br>
+            <label>工作描述<textarea></textarea></label><br>
+            <label><input type="checkbox">已阅读并同意以下协议</label>
+            <ul>
+                <li><a href="#">《用户服务协议》</a></li>
+                <li><a href="#">《隐私政策》</a></li>
+            </ul>
+        </div>
+
+        <button type="submit">免费注册</button>
+        <button type="reset">重新填写</button>
+
+    </form>
+</body>
+</html>
