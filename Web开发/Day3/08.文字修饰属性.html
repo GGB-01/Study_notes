@@ -5,36 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文字修饰属性</title>
     <style>
-        div {
-            height: 100px;
-            background-color: skyblue;
-        }
         p {
             font-size: 16px;
             /* 必须有单位px,否则大小设置不生效 */
+
             font-weight: bold;
             /* 设置粗细 */
+
             font-style: italic;
             /* 文字倾斜italic*/
-            line-height: 100px;
+
+            line-height: 2;
             /* 设置行高方式
             1.数字：font-size的倍数
             2.像素
             */
+
             font-family:楷体;
             /* 设置文字字体 */
             /* 可书写多个字体用,隔开执行顺序从左向右依次查找 */
+
+            text-indent: 2em;
+            /* 
+            首行缩进
+            1.数字+px 
+            2.数字+em   1em=当前标签的字号大小，推荐 
+            */
+
+            text-align: center ;
+            /* 
+            内容对齐方式
+            1.left,默认
+            2.center
+            3.right 
+            */
+
+            text-decoration:underline ;
+            /* 
+            文本修饰线 
+            1.none
+            2.underline
+            3.line-through
+            4.overlinw 上划线
+            */
+
+            color: red;
+            /* 
+            颜色值写法
+            1.颜色关键字：red......
+            2.rgb表示法：rgb(r,g,b)
+            3.rgba表示法：rgba(r,g,b,a),a表示透明度
+            4.十六进制表示法：#RRGGBB
+             */
+
+
         }
 
         div {
             /* font复合属性 */
             /* 多个值用空格隔开 */
-            从左向右必须为
-            font:
+            /* 从左向右必须为：是否倾斜 是否加粗 字号/行高 字体 */
+            /* 字号和字体值必须写 */
+            font: italic bold 15px/2 ;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div>绰号“小孤独”的后藤独是个开口说话必用“啊…”起头，
+        极度认生而又孤僻的少女。
+        她憧憬着自己也能闪耀起來的乐队活动，
+        然而即便开始弹吉他也交不到朋友，
+        于是她度过了每天独自弹6小时吉他的初中时代，
+        在网络上以“吉他英雄”名义上传了优秀的演奏视频，
+        也妄想能够活跃在文化节的演出中，
+        等到她醒悟的时候别说找到乐队成员了，
+        连一个朋友都交不到就成了高中生。
+        <img src="../Day1/孤独摇滚.jpg">
+    </div>
+
     <p>绰号“小孤独”的后藤独是个开口说话必用“啊…”起头，
         极度认生而又孤僻的少女。
         她憧憬着自己也能闪耀起來的乐队活动，
@@ -45,17 +94,5 @@
         等到她醒悟的时候别说找到乐队成员了，
         连一个朋友都交不到就成了高中生。
     </p>
-
-    <div>绰号“小孤独”的后藤独是个开口说话必用“啊…”起头，
-        极度认生而又孤僻的少女。
-        她憧憬着自己也能闪耀起來的乐队活动，
-        然而即便开始弹吉他也交不到朋友，
-        于是她度过了每天独自弹6小时吉他的初中时代，
-        在网络上以“吉他英雄”名义上传了优秀的演奏视频，
-        也妄想能够活跃在文化节的演出中，
-        等到她醒悟的时候别说找到乐队成员了，
-        连一个朋友都交不到就成了高中生。
-    </div>
-   
 </body>
 </html>
