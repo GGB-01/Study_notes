@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+
+用label标签绑定文字与表单控件的关系，增大表单控件的点击范围 
+
+-->
+<body>
+    <!-- 
+    写法一：
+        -label标签只包裹内容，不包裹表单控件
+        -设置label标签的for值与表单控件的id属性值相同 
+    -->
+    <input type="radio" id="man" name="gender">
+    <label for="man">男</label>
+
+    <input type="radio" id="woman" name="gender">
+    <label for="woman">女</label>
+
+    <br>
+    <br>
+    <!-- 
+    写法二：
+        -直接使用label标签包裹文字和表单控件，不需要属性
+     -->
+
+     <label>
+        <input type="radio" name="friend">后藤一里
+     </label>
+
+     <label>
+        <input type="radio" name="friend">伊地知虹夏
+     </label>
+
+</body>
+</html>
